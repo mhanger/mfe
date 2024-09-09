@@ -12,6 +12,17 @@ const prodConfig = {
     filename: '[name].[contenthash].js',
     publicPath: '/marketing/latest/'
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/marketing/[name][ext]',  // Specify the output folder as 'assets'
+        },
+      },
+    ],
+  },
   plugins: [
     new ModuleFederationPlugin({
       name: 'marketing',

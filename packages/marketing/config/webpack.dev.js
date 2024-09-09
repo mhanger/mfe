@@ -12,6 +12,17 @@ const devConfig = {
       index: 'index.html',
     },
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/marketing/[name][ext]',  // Specify the output folder as 'assets'
+        },
+      },
+    ],
+  },
   plugins: [
     new ModuleFederationPlugin({
       name: 'marketing',
