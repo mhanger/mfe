@@ -9,7 +9,7 @@ const devConfig = {
   devServer: {
     port: 8081,
     historyApiFallback: {
-      index: 'index.html',
+      index: '/index.html',
     },
   },
   module: {
@@ -18,7 +18,7 @@ const devConfig = {
         test: /\.(png|jpg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/marketing/[name][ext]',  // Specify the output folder as 'assets'
+          filename: 'assets/[name][ext]',  // Specify the output folder as 'assets'
         },
       },
     ],

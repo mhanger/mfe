@@ -18,7 +18,7 @@ const prodConfig = {
         test: /\.(png|jpg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/marketing/[name][ext]',  // Specify the output folder as 'assets'
+          filename: 'assets/[name][ext]',  // Specify the output folder as 'assets'
         },
       },
     ],
