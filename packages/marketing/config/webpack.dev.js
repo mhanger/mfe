@@ -18,7 +18,7 @@ const devConfig = {
         test: /\.(png|jpg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/[name][ext]',  // Specify the output folder as 'assets'
+          filename: 'marketing/latest/assets/[name][ext]',  // Specify the output folder as 'assets'
         },
       },
     ],
