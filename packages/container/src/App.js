@@ -51,6 +51,5 @@ export default () => {
           </div>
         </StylesProvider>
       </Router>
-
   )
 };
